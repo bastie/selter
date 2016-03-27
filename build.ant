@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project SELTER.app with libraries in sub-folder">
+	
+	<!-- see https://developer.apple.com/library/mac/documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html for directory structure -->
+	
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/.."/>
+    <property name="dir.jarfile" value="${dir.buildfile}/Contents/MacOS"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/SELTER.jar">
+            <manifest>
+                <attribute name="Main-Class" value="biz.ritter.app.selter.SELTER"/>
+                <attribute name="Class-Path" value=". ../Frameworks/Visitor.jar"/>
+            </manifest>
+            <fileset dir="${dir.buildfile}/bin"/>
+            <fileset dir="${dir.buildfile}/lib"/>
+        </jar>
+        <delete dir="${dir.jarfile}/../Frameworks"/>
+        <mkdir dir="${dir.jarfile}/../Frameworks"/>
+        <copy file="${dir.buildfile}/lib/Visitor.jar" todir="${dir.jarfile}/../Frameworks"/>
+
+    	
+        <delete dir="${dir.jarfile}/../Resources"/>
+    	<mkdir dir="${dir.jarfile}/../Resources"/>
+    	<copydir src="${dir.buildfile}/Resources" dest="${dir.jarfile}/../Resources"></copydir>
+    </target>
+</project>
