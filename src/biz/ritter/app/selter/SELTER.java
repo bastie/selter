@@ -3,7 +3,6 @@
  */
 package biz.ritter.app.selter;
 
-import java.awt.BorderLayout;
 import java.net.MalformedURLException;
 
 import javax.swing.JFrame;

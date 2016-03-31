@@ -1,0 +1,134 @@
+body {
+	font-family: Monaco, "Lucida Console", monospace;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	color: #black;
+	padding: 60px 0 1em; /* Abstand des Contentbereich nach oben und unten */
+}
+
+body {
+	margin: 10px auto;
+}
+
+nav,
+nav a,
+main,
+article,
+section,
+aside {
+	border-radius: 0.5em;
+	border: 1px solid;
+	padding: 10px;
+	margin: 10px;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	padding: 0px;
+	background: #eeeeee;
+	border-bottom: 1px solid #d5d5d5;
+}
+.menubar {
+	top: 20px;
+	padding: 0px 10px 0px 10px;
+	text-align: left;	
+}
+.toolbar {
+	border-top: 1px solid #d5d5d5;
+	top: 40px;
+	padding: 0px 10px 0px 10px;
+	text-align: left;
+}
+header div a {
+	text-decoration: none;
+	font-size: small;
+	color: black;
+}
+
+header img {
+	width: 100px;
+	margin-left: 50px;
+	float: right;
+	height: 70px;
+	margin-bottom: -1px; /* Border ausgleichen */
+}
+
+nav {
+	position:  fixed;
+	padding-top: 10em;
+	font-size: 0.91em;
+	float: left;
+	width: 15em;
+	padding: 0;
+	background: #fffbf0;
+	border-color: #e7c157;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav li {
+	list-style: none;
+	margin: 0;
+	padding: 0.5em;
+}
+
+nav a {
+	display: block;
+	padding: 0.2em 10px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #e7c157;
+	color: #333;
+}
+
+nav ul a:hover,
+nav ul a:active {
+	color: #fffbf0;
+	background-color: #dfac20;
+}
+
+main {
+	display: block;
+	background: #eeeeee;
+	border-color: #8a9da8;
+	margin-left: 15em;
+	min-width: 16em;
+	/* Mindestbreite (der Ueberschrift) verhindert Anzeigefehler in modernen Browsern */
+}
+
+article {
+	background: #ffede0;
+	border-color: #df6c20;
+	margin-right: 15em;
+}
+
+article p {
+	margin-bottom: 4em;
+}
+
+aside {
+	background: #ebf5d7;
+	border-color: #8db243;
+	float: right;
+	width: 12em;
+}
+
+footer {
+	position: fixed;
+	padding: 0px 10px 0px 10px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #eeeeee;
+	border-top: 1px solid #d5d5d5;
+}
+
+footer p {
+	float: left;
+	margin: 0px 10px 0px 0px;
+}
