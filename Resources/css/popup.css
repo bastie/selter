@@ -1,0 +1,183 @@
+.modalWindow {
+        position: absolute;
+        font-family: Helvetica;
+        font-size:80%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.2);
+        z-index: 50000;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+    .modalWindow:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+    .modalWindow > div {
+        width: 500px;
+        position: relative;
+        margin: 10% auto;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background: #fff;
+    }
+    .modalWindow .modalTitle {
+    	font-size: 24px;
+    	font-weight: bold;
+    	padding-top: 50px;
+    }
+    .modalWindow .modalHeader  {    
+    	background: #f0f0f0; 
+		padding: 12px 0px 12px 20px; 
+		border-radius: 5px 5px 0px 0px;
+    	border-bottom: 1px groove #efefef; 
+    }
+    .modalWindow .modalContent {    padding: 0px 20px 5px 20px; }
+    .modalWindow .modalTabOnlyOne {
+    	margin: 0px 0px 0px 50px;
+    	padding: 3px;
+     	border: 1px solid gray;
+     	border-radius: 5px;
+     	font-size: 12px;
+     	font-weight: 600;
+     	background: gray;
+     	color: white;
+    }
+    .modalWindow .modalTabFirstActive {
+    	margin: 0px 0px 0px 50px;
+    	padding: 3px;
+     	border: 1px solid gray;
+     	border-radius: 5px 0px 0px 5px;
+     	font-size: 12px;
+     	font-weight: 600;
+     	background: gray;
+     	color: white;
+    }
+    .modalWindow .modalTabLastActive {
+    	margin: 0px;
+    	padding: 3px;
+     	border: 1px solid gray;
+     	border-radius: 0px 5px 5px 0px;
+     	font-size: 12px;
+     	font-weight: 600;
+     	background: gray;
+     	color: white;
+    }
+    .modalWindow .modalTabMiddleActive {
+    	margin: 0px;
+    	padding: 3px;
+     	border: 1px solid gray;
+     	border-radius: 0px 0px 0px 0px;
+     	font-size: 12px;
+     	font-weight: 600;
+     	background: gray;
+     	color: white;
+    }
+    .modalWindow .modalTabMiddleInactive {
+    	margin: -5px;
+    	padding: 3px 8px 3px 6px;
+     	border: 1px solid gray;
+     	border-radius: 0px 0px 0px 0px;
+     	font-size: 12px;
+     	font-weight: 600;
+		background: #f0f0f0; 
+     	color: gray;
+    }
+    .modalWindow .modalTabFirstInactive {
+    	margin: 0px -5px 0px 50px;
+    	padding: 3px;
+     	border: 1px solid gray;
+     	border-radius: 5px 0px 0px 5px;
+     	font-size: 12px;
+     	font-weight: 600;
+		background: #f0f0f0; 
+     	color: gray;
+    }
+    .modalWindow .modalTabLastInactive {
+    	margin: -5px;
+    	padding: 3px;
+     	border: 1px solid gray;
+     	border-radius: 0px 5px 5px 0px;
+     	font-size: 12px;
+     	font-weight: 600;
+		background: #f0f0f0; 
+     	color: gray;
+    }
+
+    .modalWindow .reminderTitle {
+    	font-size: 24px;
+    	padding-top: 5px;
+    	color: #6080FF;
+    	border-bottom: 1px solid lightgray;
+    	min-width:350px;
+    }
+    .copyright {
+    	color: gray;
+    	font-size:80%;
+    	font-weight: small;
+    	text-align: center;
+    }
+    .disclaimer {
+    	color: red;
+    	font-size:80%;
+    	font-weight: bold;
+    	text-align: center;
+    }
+    .close, .minimize, .maximize, .noMinimize, .noMaximize {
+        width: 12px;
+        height: 12px;
+        font-size: 10px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 1px 1px 3px #000;
+        top:12px;
+    }
+    .close {
+    	background: red;
+		color: red;
+		position: absolute;
+        left: 6px;
+	}
+	.noMinimize {
+		background: lightgray;
+		color: lightgray;
+		position: absolute;
+        left: 26px;
+	}
+	.minimize {
+		background:#ffbd4f;
+		color: #ffbd4f;
+		position: absolute;
+        left: 26px;
+	}
+	.noMaximize {
+		background: lightgray;
+		color: lightgray;
+		position: absolute;
+        left: 46px;
+	}
+	.maximize {
+		background:#00ba4e;
+		color: #00ba4e;
+		position: absolute;
+        left: 46px;
+	}
+    .close:hover, .minimze:hover, .maximize.hover {
+    	color: black;
+    }
+.eventTitle {
+	font-weight: bold;
+	padding-top:10px;
+}
+.eventNote {
+	border-bottom: 1px solid lightgray;
+}

@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>SELTER</title>
+    <link rel="stylesheet" href="./css/selter.css" type="text/css>">
+    <link rel="stylesheet" href="./css/popup.css" type="text/css>">
+  </head>
 <body>
-<h1>SELTER</h1>
+  <header>
+	<div> 
+	     <img src="./drops-of-water-578897_640.jpg" alt="water">  
+		SELTER 
+	</div>
+    <div class="menubar">
+      <a href="#Datei">Datei</a> <a href="#Extras">Extras</a> <a href="#Hilfe">Hilfe</a>
+    </div>
+    <div  class="toolbar">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+    </div>
+  </header>
+
+  <nav id="tree">
+	  <ul>
+		<li>Arbeitnehmer
+		  <ul>
+		    <li><a href="#newESt" title="Einkommensteuererklärung">EStE<button onclick="#newESt">neu erstellen</button></a></li>
+		  </ul>
+		</li>
+	  </ul>
+  </nav>
+
+  <main role="main">
+	<aside id="help">
+		<h2>Hilfe</h2>
+      <p><a href="#openAbout">Über diese Webseite</a></p>
+
+		<p>Online Hilfeanzeige</p>
+	</aside>
+	<article>
+		<h2>Eingabebereich 1</h2>
+		<h3>1.1</h3>
+		<p>Dieser Absatz ist für dich.</p>
+	</article>
+	<article>
+		<h2>Eingabebereich 2</h2>
+		<h3>2.1</h3>
+		<p>Dieser Absatz ist für dich.</p>
+	</article>
+	<article>
+		<h2>Eingabebereich 3</h2>
+		<h3>2.2</h3>
+		<p>Dieser Absatz ist für dich.</p>
+	</article>
+  </main>
+  
+  <footer>
+	<p id="state"> 
+	  Statuszeile 
+	</p>
+  </footer>
+
+
+  <div id="openAbout" class="modalWindow">
+    <div>
+        <div class="modalHeader">
+            <a href="#close" title="Schließen" class="close">X</a>
+            <span title="Minimieren" class="noMinimize">&minus;</span>
+            <span title="Maximieren" class="noMaximize">+</span>
+            <span title="Überblick" class="modalTabOnlyOne">Über SELTER</span>
+        </div>
+        <div class="modalContent">
+          <table>
+            <tbody>
+              <tr><td rowspan="8"><img src='./drops-of-water-578897_640.jpg' alt='logo' width="120px"/>&nbsp;</td><td class='modalTitle'>SELTER</td></tr>
+              <tr><td><small>Version 0.0.0.1</small></td></tr>
+              <tr><td><strong>Bildlizenzen:</strong></td></tr>
+              <tr><td>Die Bilder stehen unter CC0 public domain Lizenz, Quelle: www.Pixabay.com</td></tr>
+              <tr><td>&nbsp;</td></tr>
+            </tbody>
+          </table>
+          <p class='copyright'>Copyright &copy; 2016 Sebastian Ritter, Alle Rechte vorbehalten.</p>
+        </div>
+    </div>
+  </div>
+
 
 </body>
 </html>
+
+
+
