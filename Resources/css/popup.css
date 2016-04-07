@@ -174,10 +174,3 @@
     .close:hover, .minimze:hover, .maximize.hover {
     	color: black;
     }
-.eventTitle {
-	font-weight: bold;
-	padding-top:10px;
-}
-.eventNote {
-	border-bottom: 1px solid lightgray;
-}
